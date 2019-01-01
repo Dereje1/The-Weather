@@ -13,7 +13,7 @@ $(document).ready(function() {
 function getWeather(lat,longi){
   //a link to city locator api, unfortunately json from darksky does not include city information so had to use
   //google reverse geocode
-  var cityApiConnection="https://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+longi+"&sensor=true";
+  var cityApiConnection="https://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+longi+"&sensor=true&key=AIzaSyCBudYOh0P06PvtEwIihhgMi_KyL8Mta3A";
   //connection to darksky weather api
   //must append "?callback=?" to avoid cross-origin error, 
   var weatherApiConnection="https://api.darksky.net/forecast/4fa387d4e92d02a607b10c7550524084/"+lat+","+longi+"?callback=?";
